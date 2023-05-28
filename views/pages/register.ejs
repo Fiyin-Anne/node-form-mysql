@@ -1,0 +1,24 @@
+<%- include('../partials/head') %>
+
+<body>
+    <div class="div">
+        <h1>Register here</h1>
+        <form method="POST" action="/register">
+            <label for="firstName">First name:</label>
+            <input type="text" name="firstName"><br><br>
+            <label for="lastName">Last name:</label>
+            <input type="text" name="lastName"><br><br>
+            <label for="email">Email: </label>
+            <input type="text" name="email"><br><br>
+            <label for="needsPT">I need a personal trainer:</label>
+            <select name="needsPT" id="needsPT">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="notsure">Not Sure</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

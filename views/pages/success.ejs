@@ -1,0 +1,11 @@
+<%- include('../partials/head', { title: 'Success' }) %>
+<body>
+    <% if (data.login) { %>
+        <p>Hello, <%= data.firstName %>. Welcome to your homepage!</p>
+    <% } else { %>
+        <h2>Thanks for registering, <%= data.firstName %>.</h2>
+        <p>Check your mailbox (<%= data.email %>) for more information on your membership. SEE YOU SOON!</p>
+    <% } %>
+
+</body>
+</html>
